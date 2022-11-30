@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://imgur.com/GDZlreS.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 480px) {
+  body {
+    height: 100vh;
+    background-position: center;
+    background-size: fill;
+  }
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  float: left;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  transform: translate(-5%, 100%);
+}
+@media (max-width: 480px) {
+  .links {
+    flex-direction: column;
+    float: left;
+    display: flex;
+    transform: translate(-70%, 45%);
+    gap: 1px;
+    text-align: left;
+    align-items: left;
+  }
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Michroma", sans-serif;
+  transition: 3s all;
+}
+@media (max-width: 480px) {
+  .links a {
+    font-size: 10px;
+    gap: 1px;
+    text-align: left;
+    color: white;
+  }
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+.right-side {
+  display: flex;
+  float: right;
+  gap: 15px;
+  margin-right: 20px;
+}
+@media (max-width: 480px) {
+  .right-side {
+    margin-top: 10px;
+    transform: translateY(-350%);
+  }
+}
+@media (max-width: 768px) {
+  .right-side {
+    margin-top: 80px;
+    transform: translateY(-420%);
+  }
+}
+@media (max-width: 1024px) {
+  .right-side {
+    margin-top: 80px;
+  }
+}
+.right-side a {
+  color: white;
+  font-family: "Michroma", sans-serif;
+  text-decoration: none;
+  transition: 3s all;
+  cursor: pointer;
+}
+.right-side a:hover {
+  text-decoration: underline;
+}
+
+.button-2 {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  font-family: "Baumans", cursive;
+  border-radius: 50px;
+  width: 120px;
+  cursor: pointer;
+  height: 35px;
+  border: none;
+  transform: translateY(-10%);
+  transition: 0.8s;
+}
+.button-2:hover {
+  background: linear-gradient(to right, #4776e6, #8e54e9);
+  font-size: 18px;
+}
+
+.button-1 {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+  font-family: "Baumans", cursive;
+  border-radius: 50px;
+  width: 120px;
+  cursor: pointer;
+  height: 35px;
+  border: none;
+  transform: translateY(-10%);
+  transition: 0.8s;
+}
+.button-1:hover {
+  background: linear-gradient(to right, #4776e6, #8e54e9);
+  font-size: 18px;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 30px;
+}
+@media (max-width: 480px) {
+  .main-div {
+    margin-top: 30px;
+  }
+}
+.main-div h1 {
+  color: gold;
+  font-size: 60px;
+  font-family: "Orbitron", sans-serif;
+}
+@media (max-width: 480px) {
+  .main-div h1 {
+    font-size: 24px;
+    transform: translateY(20%);
+  }
+}
+.main-div p {
+  font-family: "Michroma", sans-serif;
+  color: white;
+}
+@media (max-width: 480px) {
+  .main-div p {
+    font-size: 12px;
+  }
+}
+.main-div a {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+.main-div a:hover {
+  transform: translateY(-20%);
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+.credit p {
+  font-family: "Baumans", cursive;
+  color: white;
+}
+.credit a {
+  color: gold;
+  text-decoration: none;
+  transition: 0.8s;
+}
+.credit a:hover {
+  text-decoration: underline;
+}
+
+.sub-text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .credit {
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=index.css.map */
